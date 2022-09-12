@@ -1,0 +1,4 @@
+- tabs
+- better autocomplete
+- search
+- create/delete/rename files/folders
