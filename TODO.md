@@ -1,4 +1,4 @@
-- tabs
+- tabs align left
 - better autocomplete
-- search
+- search all files
 - create/delete/rename files/folders
