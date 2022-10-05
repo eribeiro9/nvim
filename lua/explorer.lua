@@ -1,23 +1,12 @@
-local cmdOld = vim.cmd
-local cmd = vim.api.nvim_create_autocmd
 local map = require('utils').map
 
-vim.g.NERDTreeShowHidden = 1
-vim.g.NERDTreeMinimalUI = 1
-vim.g.NERDTreeIgnore = { }
-vim.g.NERDTreeStatusline = ''
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
 
--- open on startup
-cmdOld('autocmd VimEnter * NERDTree | wincmd p')
---cmd('VimEnter', {
---  pattern = '*',
---  callback = function()
---    vim.notify('test')
---  end
---})
+require('nvim-tree').setup {
+  open_on_setup = true,
+  open_on_setup_file = true,
+}
 
--- exit neovim if NERDTree is last split
-cmdOld('autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif')
-
-map('n', '<C-b>', ':NERDTreeToggle<cr>')
+map('n', '<C-b>', ':NvimTreeToggle<cr>')
 

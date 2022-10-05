@@ -1,3 +1,2 @@
 - tabs align left
 - better autocomplete
-- create/delete/rename files/folders

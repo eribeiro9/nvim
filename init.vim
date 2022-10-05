@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'kyazdani42/nvim-web-devicons'
 
   " explorer
-  Plug 'preservim/nerdtree'
+  Plug 'kyazdani42/nvim-tree.lua'
 
   " search
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -35,5 +35,6 @@ lua require('explorer')
 lua require('search')
 lua require('autocomplete')
 lua require('git')
+lua require('tab-line')
 lua require('status-bar')
 

@@ -3,5 +3,5 @@ require('lualine').setup {
     lualine_x = { 'filetype' },
     lualine_y = { }
   },
-  extensions = { 'nerdtree' }
+  extensions = { 'nvim-tree' }
 }
